@@ -9,26 +9,26 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="metrics/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Metrics Library</title>
+        <title>Metrics - Metrics Library</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metrics-library" class="md-skip">
+        <a href="#metrics" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Metrics Library" class="md-header__button md-logo" aria-label="Metrics Library" data-md-component="logo">
+    <a href=".." title="Metrics Library" class="md-header__button md-logo" aria-label="Metrics Library" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Metrics
             
           </span>
         </div>
@@ -224,7 +224,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Metrics Library" class="md-nav__button md-logo" aria-label="Metrics Library" data-md-component="logo">
+    <a href=".." title="Metrics Library" class="md-nav__button md-logo" aria-label="Metrics Library" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -251,6 +251,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -270,7 +297,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Metrics
   
 
     
@@ -281,14 +308,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Home
+    Metrics
   
 
     
@@ -314,10 +341,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#mean-squared-error-meansquarederror" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features
+        Mean Squared Error (MeanSquaredError)
       
     </span>
   </a>
@@ -325,10 +352,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#mean-absolute-error-meanabsoluteerror" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation
+        Mean Absolute Error (MeanAbsoluteError)
       
     </span>
   </a>
@@ -336,10 +363,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#accuracy-accuracy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start
+        Accuracy (Accuracy)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f1-score-f1score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 Score (F1Score)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-loss-logloss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Loss (LogLoss)
       
     </span>
   </a>
@@ -350,33 +399,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="metrics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Metrics
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -408,10 +430,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#mean-squared-error-meansquarederror" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features
+        Mean Squared Error (MeanSquaredError)
       
     </span>
   </a>
@@ -419,10 +441,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#mean-absolute-error-meanabsoluteerror" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation
+        Mean Absolute Error (MeanAbsoluteError)
       
     </span>
   </a>
@@ -430,10 +452,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#accuracy-accuracy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start
+        Accuracy (Accuracy)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f1-score-f1score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 Score (F1Score)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-loss-logloss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Loss (LogLoss)
       
     </span>
   </a>
@@ -460,29 +504,39 @@
   
 
 
-<h1 id="metrics-library">Metrics Library<a class="headerlink" href="#metrics-library" title="Permanent link">&para;</a></h1>
-<p>Welcome to the <strong>Metrics Library</strong>! This package provides a suite of modelling metric functions with optional Gen AI generated descriptions.</p>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Metric implementations</strong>: MSE, MAE, Accuracy, F1 Score, Log Loss.</li>
-<li><strong>Gen AI description</strong>: Generate natural‑language explanations for metric results.</li>
-<li><strong>Scalable design</strong>: Easy to extend with new metrics and prompts.</li>
-<li><strong>Fully tested</strong>: 90%+ test coverage.</li>
-<li><strong>Documentation</strong>: Hosted on GitHub Pages via MkDocs.</li>
-</ul>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>metrics_library
-</code></pre></div>
-<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<h1 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">&para;</a></h1>
+<p>This library provides the following metric implementations:</p>
+<h2 id="mean-squared-error-meansquarederror">Mean Squared Error (<code>MeanSquaredError</code>)<a class="headerlink" href="#mean-squared-error-meansquarederror" title="Permanent link">&para;</a></h2>
+<p>Calculates the average of the squared differences between true and predicted values.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">metrics_library.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">MeanSquaredError</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">metrics_library.genai.description_generator</span><span class="w"> </span><span class="kn">import</span> <span class="n">DescriptionGenerator</span>
-
 <span class="n">mse</span> <span class="o">=</span> <span class="n">MeanSquaredError</span><span class="p">()</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">mse</span><span class="o">.</span><span class="n">calculate</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">])</span>
-
-<span class="n">desc</span> <span class="o">=</span> <span class="n">DescriptionGenerator</span><span class="p">()</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">desc</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">mse</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="mean-absolute-error-meanabsoluteerror">Mean Absolute Error (<code>MeanAbsoluteError</code>)<a class="headerlink" href="#mean-absolute-error-meanabsoluteerror" title="Permanent link">&para;</a></h2>
+<p>Calculates the average absolute difference between true and predicted values.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">metrics_library.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">MeanAbsoluteError</span>
+<span class="n">mae</span> <span class="o">=</span> <span class="n">MeanAbsoluteError</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">mae</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="accuracy-accuracy">Accuracy (<code>Accuracy</code>)<a class="headerlink" href="#accuracy-accuracy" title="Permanent link">&para;</a></h2>
+<p>Proportion of correct predictions for classification tasks.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">metrics_library.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">Accuracy</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Accuracy</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="f1-score-f1score">F1 Score (<code>F1Score</code>)<a class="headerlink" href="#f1-score-f1score" title="Permanent link">&para;</a></h2>
+<p>Harmonic mean of precision and recall for binary classification.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">metrics_library.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">F1Score</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="n">F1Score</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">f1</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="log-loss-logloss">Log Loss (<code>LogLoss</code>)<a class="headerlink" href="#log-loss-logloss" title="Permanent link">&para;</a></h2>
+<p>Binary cross‑entropy loss for classification probabilities.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">metrics_library.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogLoss</span>
+<span class="n">logloss</span> <span class="o">=</span> <span class="n">LogLoss</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">logloss</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred_proba</span><span class="p">)</span>
+</code></pre></div>
+<p>Each metric returns a <code>MetricResult</code> object containing the <code>value</code>, <code>name</code>, and optional <code>metadata</code>.</p>
 
 
 
@@ -532,10 +586,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
