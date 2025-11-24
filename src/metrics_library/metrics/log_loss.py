@@ -1,6 +1,6 @@
 """Log Loss (cross-entropy) metric implementation.
 
-Provides the `LogLoss` class implementing the Metric interface for binary classification.
+Provides the :class:`LogLoss` class implementing the ``Metric`` interface for binary classification.
 """
 
 from typing import Union
@@ -13,6 +13,22 @@ class LogLoss(Metric):
     """Log Loss metric.
 
     Computes the binary cross-entropy loss given true labels and predicted probabilities.
+
+    Args:
+        None.
+
+    Returns:
+        MetricResult: An object containing the log loss value and metric name.
+
+    Raises:
+        ValueError: If ``y_true`` and ``y_pred`` have mismatched shapes.
+
+    Example:
+        >>> from metrics_library.metrics import LogLoss
+        >>> logloss = LogLoss()
+        >>> result = logloss.calculate([1, 0, 1, 1, 0, 0], [0.9, 0.2, 0.8, 0.7, 0.1, 0.3])
+        >>> result.value
+        0.21616...
     """
 
     def __init__(self) -> None:
@@ -24,10 +40,15 @@ class LogLoss(Metric):
         y_true_arr = np.asarray(y_true, dtype=float)
         y_pred_arr = np.asarray(y_pred, dtype=float)
         if y_true_arr.shape != y_pred_arr.shape:
-            raise ValueError("y_true and y_pred must have the same shape for LogLoss calculation.")
+            raise ValueError(
+                "y_true and y_pred must have the same shape for LogLoss calculation."
+            )
         # Clip predictions to avoid log(0)
         eps = np.finfo(float).eps
         y_pred_clipped = np.clip(y_pred_arr, eps, 1 - eps)
         # Binary cross-entropy
-        loss = -np.mean(y_true_arr * np.log(y_pred_clipped) + (1 - y_true_arr) * np.log(1 - y_pred_clipped))
+        loss = -np.mean(
+            y_true_arr * np.log(y_pred_clipped)
+            + (1 - y_true_arr) * np.log(1 - y_pred_clipped)
+        )
         return MetricResult(value=float(loss), name=self.name)
