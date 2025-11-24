@@ -1,0 +1,49 @@
+site_name: Metrics Library
+nav:
+  - Home: index.md
+  - Metrics: metrics.md
+repo_url: https://github.com/yourusername/metrics_library
+repo_name: metrics_library
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.magiclink
+  - pymdownx.keys
+  - pymdownx.progressbar
+  - pymdownx.details
+  - pymdownx.smartsymbols
+  - pymdownx.mark
+  - pymdownx.inline:
+      custom_inline: true

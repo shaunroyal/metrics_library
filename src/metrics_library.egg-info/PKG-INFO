@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: metrics_library
+Version: 0.1.0
+Summary: A suite of modelling metric functions with Gen AI integration.
+Author-email: Antigravity <antigravity@example.com>
+License: Apache 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: mkdocs-material; extra == "dev"
+Provides-Extra: mlflow
+Requires-Dist: mlflow>=2.0.0; extra == "mlflow"
+
+# Metrics Library
+
+A suite of modelling metric functions designed for scalability and ease of use, featuring Gen AI integration for automated metric descriptions.
+
+## Features
+
+- **Standard Metrics**: Implementations of common regression and classification metrics.
+- **Gen AI Integration**: Generate natural language descriptions of your metric results using LLMs.
+- **Prompt Management**: Manage prompts via local YAML or MLflow.
+- **Google Style Guide**: Codebase adheres to Google's Python style guide.
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+from metrics_library.metrics.regression import MeanSquaredError
+
+y_true = [3, -0.5, 2, 7]
+y_pred = [2.5, 0.0, 2, 8]
+
+mse = MeanSquaredError()
+result = mse.calculate(y_true, y_pred)
+print(f"MSE: {result.value}")
+
+# Generate description (requires configuration)
+# description = mse.get_description(result)
+# print(description)
+```

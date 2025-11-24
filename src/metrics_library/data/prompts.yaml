@@ -1,0 +1,11 @@
+metrics:
+  mean_squared_error:
+    description_template: "Mean Squared Error (MSE) measures the average of the squares of the errors between predicted and actual values. The MSE is {value:.4f}."
+  mean_absolute_error:
+    description_template: "Mean Absolute Error (MAE) measures the average absolute difference between predicted and actual values. The MAE is {value:.4f}."
+  accuracy:
+    description_template: "Accuracy represents the proportion of correct predictions. The accuracy is {value:.2%}."
+  f1_score:
+    description_template: "F1 Score is the harmonic mean of precision and recall. The F1 Score is {value:.4f}."
+  log_loss:
+    description_template: "Log Loss (cross-entropy loss) quantifies the accuracy of a classifier. The log loss is {value:.4f}."
